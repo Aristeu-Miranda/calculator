@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    @apply bg-slate-500;
+    @apply bg-sky-100;
+    font-family: 'Bebas Neue', cursive;
+}
+
+@layer components {
+    button {
+        @apply transition duration-100 active:-translate-y-1 text-xl;
+    }
+
+    .number {
+        @apply bg-sky-300 text-gray-700 rounded-lg p-2;
+    }
+
+    .operator {
+        @apply bg-[#219ebc] text-white rounded-lg p-2;
+    }
 }
