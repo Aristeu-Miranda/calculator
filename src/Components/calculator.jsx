@@ -26,10 +26,10 @@ function Calculator() {
                 <h1 className="text-5xl font-bold my-auto pt-1 text-cyan-950">calc</h1>
                 <input type="text" name="inputResult" id="inputResult"  className={inputStyle} value={result} disabled/>
             </div>
-            <div className="bg-cyan-950 w-80 mx-auto mt-10 p-4 rounded-lg shadow-lg">
+            <div className="bg-cyan-950 w-80 mx-auto mt-5 p-4 rounded-lg shadow-lg">
                     <div className="grid grid-cols-4 gap-y-4 gap-x-3 mt-4">
-                        <button className="operator" onClick={clear}>AC</button>
-                        <button className="operator" onClick={delElement}>DE</button>
+                        <button className="operator bg-red-600" onClick={clear}>AC</button>
+                        <button className="operator bg-red-900" onClick={delElement}>DE</button>
                         <button id="." className="operator" onClick={clickKeys}>.</button>
                         <button id="/" className="operator" onClick={clickKeys}>/</button>
                         <button id="7" className="number" onClick={clickKeys}>7</button>
@@ -46,7 +46,7 @@ function Calculator() {
                         <button id="+" className="operator" onClick={clickKeys}>+</button>
                         <button id="00" className="number" onClick={clickKeys}>00</button>
                         <button id="0" className="number" onClick={clickKeys}>0</button>
-                        <button id="=" className="operator col-span-2" onClick={calculate}>=</button>
+                        <button id="=" className="operator col-span-2 bg-green-700" onClick={calculate}>=</button>
                     </div>
             </div>
         </div>
